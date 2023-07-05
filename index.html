@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Open+Sans&family=Outfit:wght@700&family=Poppins&family=Solway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+  <script>
+    function validateForm() {
+  let x = document.forms["myForm"]["email"].value;
+  let  mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
+  if (x == "" || x == null) {
+    alert("Whoops! It looks like you forgot to add your email");
+ 
+    return false;
+  }else if (mailformat.test(x)){
+    alert("Successful");
+ 
+    return true
+  }
+  
+  else{
+    alert("Please provide a valid email address");
+
+    return false;
+    
+  }
+  
+    }
+  </script>
+  
+</head>
+<body>
+<main>
+<header>
+  <img  class="logo" src="./images/logo.svg" alt="logo"/>
+  <h1>We are launching <strong>soon!</strong></h1>
+
+  <h2>Subscribe and get notified</h2>
+</header>
+<div class="notify">  
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" >
+  <input placeholder="your email address" type="email" name="email"  />
+  
+  <button  type="submit" >Notify Me</button>
+</form> 
+</div> 
+
+<div class="container">
+ <img src="./images/illustration-dashboard.png" alt="main-page"/>
+</div>
+
+</main>
+  <footer>
+    <div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mays Alraheem</a>.
+    </p>
+  </div>
+  <div class="icons">
+    <span class="icon" > <ion-icon name="logo-facebook" title="Edit"></ion-icon></ion-icon></span>
+    <span class="icon" ><ion-icon name="logo-twitter" title="Edit"></ion-icon></span> 
+    <span class="icon"> <ion-icon name="logo-instagram" title="Edit"></ion-icon></span>
+  </div>
+  <div class="copyright">
+    &copy; Copyright Ping. All rights reserved.
+  </div>
+  </footer>
+</body>
+</html>
