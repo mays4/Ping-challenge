@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mays4/Ping-challenge.git)
-- Live Site URL: [Add live site URL here](https://mays4.github.io/Ping-challenge/)
+- Solution URL: [solution URL](https://github.com/mays4/Ping-challenge.git)
+- Live Site URL: [live site URL](https://mays4.github.io/Ping-challenge/)
 
 ## My process
 
